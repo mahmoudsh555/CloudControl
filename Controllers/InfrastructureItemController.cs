@@ -49,7 +49,7 @@ namespace CloudControl.Controllers
                 return Problem(ex.Message);
             }
         }
-
+        // call this api to create folder and json files on harddisk
         [Route("/api/[controller]/SyncFolder")]
         [HttpPost]
         public async Task<ActionResult> SyncFolder()
